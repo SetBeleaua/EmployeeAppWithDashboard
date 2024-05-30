@@ -1,0 +1,218 @@
+.circle-profile-photo {
+    width: 80px; /* Setează dimensiunea cercului */
+    height: 79px; /* Setează dimensiunea cercului */
+    border-radius: 50%; /* Transformă div-ul într-un cerc */
+    overflow: hidden; /* Asigură că imaginea este tăiată la forma cercului */
+  }
+  
+  .circle-profile-photo img {
+    width: 100%; /* Asigură că imaginea ocupă întregul spațiu al cercului */
+    height: auto; /* Permite ca înălțimea imaginii să se ajusteze automat proporțional cu lățimea */
+  }
+
+
+.left-side-dashboard{
+
+
+    border: 1px solid black;
+    width: 350.381px;
+    height:930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 15.875px;
+    background: #2C6397;  
+}  
+
+.circle-profile-photo{
+    margin-top: 33px;
+}
+
+.employee-username{
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dashboard-container{
+
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://s3-alpha-sig.figma.com/img/b020/ba04/f8a73584025e4ee5d5557d0b2228c4f1?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LqOmJ7737uekHaU7ru6tLZT~O9pKhp8KvFG~GACb7QRB3NIyHoPMkAvxXTxbjA8ufq8bGN3piVX720quFZbYQQgV6QuFXmi1h8~UK2KIWu42L-iyBeI2GnB4LzKuLzPwHHl1f9DEH7GaPkLdwn2ODrBbD~ucC4sGf1XmyQmh1GRT62GlLg0ruQhxQVHfMVrzy1pg8AgXrGctaTFf0wUS3auvqyyUNGo84sSsLbfew4Cdh0wfX8g3tPj0esgCiZ4PcD6dkTDUF~QPI-rgywYtNWVq5kMK4vLqEDX2BpupA9yCMOpQ5U1A5qbIOz00tnVF9lPMyBZ31Z~mKpxw~M7P3Q__");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.hi-manager-text{
+
+
+    
+    margin-left: 50px;
+    width: 290px;
+    height: 64px;
+    margin-top: 55px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.searh-bar-employee{
+    
+    margin-left: 50px;
+    width: 420px;
+    height: 46px;
+    display: flex;
+    align-items: center
+}
+
+
+
+.searh-bar-employee input{
+
+    width: 400px;
+    border-radius: 15px;
+    background: #FFF;
+    height: 30px;
+
+}
+
+
+.employee-table {
+    width: 1000px; /* Lățimea tabelului să fie 100% */
+    border-collapse: collapse;
+    max-height: 400px; /* Ajustează această valoare după preferințe */
+    overflow-y: auto;
+    
+    margin-left: 50px;
+    margin-top: 50px;
+    
+  }
+  
+  .employee-table th,
+  .employee-table td {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    text-align: left;
+    width: 400px;
+    height: 10px;
+    
+  }
+  
+  .employee-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .employee-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .employee-table tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .add-emp-btn {
+    margin-bottom: 10px; /* Adaugă un spațiu între buton și tabel */
+  }
+  
+  .add-emp-btn,
+  .employee-table button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .employee-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .employee-table button:hover {
+    background-color: #d32f2f;
+  }
+  
+  
+  .dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .add-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+.input-row-add-employee{
+
+  
+  display: flex;
+  flex-direction: column;
+  gap:4px ;
+  width: 400px;
+  
+}
+
+.add-employee-form{
+
+  margin-top: 20px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CSS-ul pentru label-uri și input-uri */
+.add-employee-form label {
+  color: #333; /* Culoarea textului pentru label-uri */
+  font-size: 16px; /* Dimensiunea textului pentru label-uri */
+}
+
+.add-employee-form input[type="text"] {
+  width: 70%; /* Lățimea input-urilor să fie 100% */
+  padding: 12px; /* Spațiul de margine interioară pentru input-uri */
+  border: 1px solid #ccc; /* Stilul și culoarea border-ului pentru input-uri */
+  border-radius: 5px; /* Rotunjirea colțurilor input-urilor */
+  font-size: 16px; /* Dimensiunea textului pentru input-uri */
+}
+
+.add-employee-form input[type="text"]:focus {
+  outline: none; /* Elimină conturul de focus la input-uri */
+  border-color: #007bff; /* Schimbă culoarea border-ului la focus pentru input-uri */
+}
+
+.submit-employee-form-btn{
+
+  width: 305px;
+  margin-top: 10px;
+  
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
